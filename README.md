@@ -1,6 +1,6 @@
-# EmployeeManagement
 Employee Management System
-This is a web-based Employee Management System built with ASP.NET Core, Entity Framework, and Bootstrap. The application allows users to manage employee data, including the ability to create, read, update, and delete employee records.
+Overview
+This is a web-based Employee Management System built with ASP.NET Core, Entity Framework, and Bootstrap. The application allows users to manage employee data, including the ability to Create, Read, Update, and Delete employee records.
 
 Features
 CRUD Operations: Create, Read, Update, and Delete employee records.
@@ -26,7 +26,7 @@ Visual Studio or Visual Studio Code
 Getting Started
 Clone the repository
 
-git clone https://github.com/your-username/EmployeeManagementSystem.git
+git clone https://github.com/Ashrafsellak9/EmployeeManagementSystem.git
 cd EmployeeManagementSystem
 Install Dependencies
 Run the following command to restore the necessary dependencies:
@@ -37,16 +37,19 @@ Set up the Database
 Configure the Connection String:
 Open appsettings.json and update the connection string to match your database setup:
 
+
 "ConnectionStrings": {
   "DefaultConnection": "Server=(localdb)\\MSSQLLocalDB;Initial Catalog=EmployeeBD;Integrated Security=True;"
 }
-Apply Migrations: Run the following command to create the database schema based on the models:
+Apply Migrations:
+Run the following commands to create the database schema based on the models:
 
 
 dotnet ef migrations add InitialCreate
 dotnet ef database update
 Run the Application
 Once the dependencies are installed and the database is set up, you can run the application:
+
 
 dotnet run
 Visit http://localhost:5000 in your browser to interact with the application.
@@ -66,12 +69,12 @@ wwwroot/css: Contains custom styles if needed.
 
 Known Issues
 None so far!
+
 Future Enhancements
 Authentication: Add user authentication to restrict access to certain functionalities.
 API Integration: Expose the data via an API to allow external applications to interact with the employee records.
 Advanced Search & Pagination: Implement search and pagination features for better data navigation.
 Contributing
 If you'd like to contribute to this project, feel free to fork the repository, create a new branch, and submit a pull request. All contributions are welcome!
-
 License
 This project is open-source and available under the MIT License.
